@@ -1,0 +1,253 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+body{
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    border-bottom: 1px solid #423940;
+}
+
+header .row{
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .brand-name a{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 800;
+    color: #ffffff;
+    /* text-transform: uppercase; */
+    z-index: 10;
+}
+
+header .navbar{
+
+}
+
+header .navbar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header .navbar ul li{
+    display: inline-block;
+    margin-left: 35px;
+}
+
+header .navbar ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 72px;
+    color: #ffffff;
+    font-weight: 800px;
+    display: block;
+    position: relative;
+}
+
+header .navbar ul li a::before{
+    content: '';
+    height: 3px;
+    background-color: #ffffff;
+    width: 0%;
+    position: absolute;
+    right: 0px;
+    top: 100%;
+    bottom: -1px;
+    transition: all .5s ease;
+}
+
+header .navbar ul li a:hover::before{
+    width: 100%;
+    left: 0%;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+
+.home{
+    min-height: 100vh;
+    background-image: url(Images/1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.home .full-screen{
+    min-height: 100vh;
+}
+
+.home .home-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.home .home-content .block{
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.home .home-content .block h6{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+
+.home .home-content .block h1{
+    color: #ffffff;
+    font-size: 80px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    padding: 0;
+    line-height: 1.2;
+}
+
+.about-me{
+    padding: 100px 15px;
+}
+
+.about-me .section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.about-me .section-title h1{
+    display: inline-block;
+    font-size: 35px;
+    font-weight: 700px;
+    margin: 0 0 10px;
+    position: relative;
+}
+
+.about-me .section-title p.small{
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.about-me .section-title h1:before{
+    content: '';
+    left: 0px;
+    right: 20%;
+    bottom: 0px;
+    height: 2px;
+    background-color: #febd01;
+    position: absolute;
+}
+
+.about-me .about-content .img{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+
+.about-me .about-content .img img{
+    width: 70%;
+    height: 80%;
+    display: block 
+}
+
+.about-me .about-content .text{
+    flex: 0 0 66.66%;
+    max-width: 66.66%;
+    padding-left: 10px;
+}
+
+.about-me .about-content .text h2{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 0 5px;
+}
+
+.about-me .about-content .text p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #838383;
+    margin: 0 0 20px ;
+}
+
+.about-me .about-content .text .info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:  space-between;
+}
+
+.about-me .about-content .text .info .list{
+    flex: 0 0 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 10px;
+}
+
+.about-me .about-content .text .info .list label{
+    padding-right: 10px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.about-me .about-content .text .info .list p{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #838383;
+}
+
+footer{
+    padding: 80px 15px;
+    background-color: #0c0c17;
+}
+
+footer .logo{
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    font-size: 45px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+footer .social{
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;  
+}
+
+footer .social a{
+    color: #999999;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 12px;
+    transition:all .5s ease;
+}
+
+footer .social a:hover{
+    color: #ffffff;
+}
